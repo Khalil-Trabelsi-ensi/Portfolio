@@ -1,0 +1,541 @@
+/* Navbar*/
+.navbar .navbar-brand {
+  font-size: 2rem; /* Increase the font size of the brand */
+  font-weight: bold; /* Make it bold */
+  color: #ffffff; /* Set text color */
+  padding-left: 30px;
+  
+}
+.navbar .navbar-brand:hover {
+  color: #1877F2;
+  
+}
+.custom-nav-margin {
+  padding-right: 70px; /* Adjust this value to create desired space */
+}
+
+.navbar .nav-link  {
+  font-size: 1.2rem; /* Adjust font size */
+  margin-left: 30px !important;
+}
+.navbar .nav-link:hover {
+  color: #1877F2;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0);
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-scrolled {
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+/**/
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+b{
+  font-weight: 900;
+  color: #1877F2;
+}  
+body{
+    padding-top: 80px; /* Adjust this value to match the height of your navbar */
+    font-family: 'Raleway', sans-serif !important;
+    background-color: #01002c !important;
+    color: #E7E7E7 !important;
+    min-height: 100vh !important; 
+  }
+  /* Resume PAGE */
+  .download{
+    width: 200px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #04b57d;
+    color: #fff;
+    border:none;
+    margin-top: 150px;
+    margin-bottom: 300px;
+  }
+  .download:hover {
+    background-color: #777777; /* Background color when hovered */
+    color: #fff; /* Text color when hovered */
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+.res{
+    text-decoration: none;
+    color: #fff;
+}
+.arrow{
+      width: 300px; 
+      height: 300px;
+      margin-left: 40%;
+      transition: transform 0.5s ease;
+}
+.arrow:hover{
+  opacity: 0.7;
+  transform: translateY(170px);
+}
+
+.pdf-viewer-container {
+  width: 100%;
+  max-width: 1000px; /* Set a max width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+  background-color: #000000; /* Dark background for styling */
+}
+
+.pdf-viewer-wrapper {
+  width: 100%;
+  height: 100vh; /* Make the viewer take full available height */
+  overflow: auto; /* Enable scroll if content is too large */
+  
+}
+@media (max-width: 768px) {
+  .pdf-container {
+      flex-direction: column; /* Stack elements on smaller screens */
+      align-items: center; /* Center items horizontally */
+  }
+
+  .pdf-viewer-wrapper {
+      width: 100%; /* Make the viewer take the full width */
+      height: auto; /* Allow height to adjust automatically */
+      max-width: none; /* Remove max-width for smaller screens */
+  }
+  .download {
+    width: 180px;
+    height: 45px;
+    margin-bottom: 100px;
+  }
+  .download:hover {
+    background-color: #777777; /* Background color when hovered */
+    color: #fff; /* Text color when hovered */
+    transition: background-color 0.3s, color 0.3s;
+    
+  }
+  
+  .arrow {
+    width: 250px;
+    height: 250px;
+    margin-left: 30%;
+  }
+  .arrow:hover{
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .pdf-container {
+      gap: 10px; /* Reduce space between elements */
+  }
+
+  .pdf-viewer-wrapper {
+      height: 70vh; /* Adjust height for very small screens */
+  }
+  .download {
+    width: 150px;
+    height: 40px;
+    margin-bottom: 50px;
+  }
+  .arrow {
+    width: 200px;
+    height: 200px;
+    margin-left: 20%;
+  }
+}
+   /* HOME PAGE */
+.HomePage{
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 80vh;
+  margin-top: 100px;
+  margin-bottom: -50px;
+  align-items: center;
+}
+.HomeText h1{
+  font-weight: 600;
+  font-size: 38px;
+  letter-spacing: 0.7px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.TypeEffect{
+  padding: 25px 0px;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 0.6px;
+  text-align: left;
+}
+
+.illustration{
+  width: 400px;
+  height: 400px;
+  transition: transform 0.1s ease;
+}
+.illustration:hover{
+      opacity: 0.7;
+
+}
+
+@media(max-width:900px){
+  .HomePage{
+    display: block;
+    text-align: center;
+    margin-top: 150px;
+    padding: 25px;
+  }
+  .HomeText{
+    text-align: left;
+    display: inline-block;
+  }
+  .illustration{
+    margin: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media(max-width: 500px) {
+  .HomePage{
+    min-height: 70vh;
+  }
+  .NavbarLinks{
+    inset: 0 0 0 30%;
+  }
+  .HomeText h1{
+    font-weight: 500;
+    font-size: 28px;
+  }  
+  .TypeEffect{
+    font-weight: 500;
+    font-size: 24px;
+  }
+  .illustration{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 0px;
+  }
+}
+/*footer*/
+footer h4{
+  margin: 0 25px;
+  font-weight: 500;
+  
+}
+
+footer{
+  width: 90%;
+  height: 40px;
+  margin: 10px auto;
+  margin-top: 80px;
+  letter-spacing: 0.5px;
+  
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+}
+.footerLinks{
+  display: flex;
+  width: 180px;
+  font-size: 18px;
+  justify-content: space-evenly;
+}
+
+.footerLinks a{ 
+  text-decoration: none;
+  color: inherit;
+}
+/* ABOUT */
+
+.AboutPage{
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 80vh;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.AboutText{
+  font-size: large;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  text-align: left;
+}
+.AboutTextHeading{
+  font-weight: 600;
+  font-size: 38px;
+  letter-spacing: 0.7px;
+  margin-bottom: 50px;
+  
+}
+.AboutTextHeading:hover{
+  opacity: 0.7;
+  
+}
+
+
+.AboutImage {
+  width: 400px;
+  margin-bottom: 75px;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Optional: make it circular */
+}
+
+
+.child{
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  
+}
+
+
+@media(max-width:900px){
+  .AboutPage{
+    display: block;
+    text-align: center;
+    padding: 30px;    
+  }
+  .AboutText{
+    text-align: left;
+    display: inline-block;
+    width: 95%;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+    margin-bottom: 80px;
+  }
+  .AboutTextHeading{
+    font-size: 26px;
+  }
+
+  .AboutImage {
+    width: 200px;
+    margin-bottom: 75px;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 200px; /* Set a maximum width for the image */
+    border-radius: 50%; /* Optional: make it circular */
+  }
+}
+
+  @media(max-width:900px){
+    .AboutPage{
+      display: flex; /* Use flexbox layout */
+      align-items: center; /* Center align items vertically */
+      justify-content: space-between; /* Space between text and image */
+      margin: 20px; /* Optional: Add some margin around the container */   
+    }
+    .AboutText{
+      flex: 1; /* Take up remaining space */
+    padding-right: 20px; /* Space between text and image */
+    text-align: left; /* Align text to the left */
+    }
+    .AboutTextHeading{
+      font-size: 26px;
+    }}
+
+
+/*skills*/
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 10%;
+}
+
+.Skills-Icons{
+  width: max(15%,150px);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 25px 25px 0px;
+  border: 3px solid #1877F2;
+  font-size: 64px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.Skills-Icons:hover{
+  transform: scale(1.2);
+  box-shadow: 0 2px 8px 0 #1877F2;
+}
+
+.SkillsHeading{
+  text-align: center;
+  margin: 50px 10px;
+  font-size: 36px;
+  letter-spacing: 0.6px;
+}
+/*Projects*/
+.projects {
+  display: flex;
+  gap: 60px;  /* Adds space between the boxes */
+  justify-content: center;  /* Centers the boxes horizontally */
+  flex-wrap: wrap;  /* Allows wrapping of items if the screen is too small */
+}
+
+.project-box {
+  width: 400px;  /* Fixed width for each box */
+  height:850px;  /* Fixed height for each box */
+  background-color:transparent;
+  border: 3px solid #1877F2;
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 30px 25px 50px 25px;
+  transition: 0.5s;
+  
+}
+.project-box:hover{
+  transform: scale(1.05);
+  box-shadow: #1877F2;
+}
+
+.project-box h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #1877F2;
+  
+}
+
+.project-box p {
+  font-size: 15px;
+  color: #E7E7E7;
+  transform: translateY(70px);
+  text-align: left !important;
+  overflow: visible;
+}
+.image-container{
+  display: flex;
+  width: 80%;
+  margin: 0 auto; 
+  margin-top: 50px;
+  justify-content: center;
+  border-radius: 2%;
+  border: 1px solid #1877F2;
+  transition: 0.5s;
+}
+.image-container:hover{
+  transform: scale(1.5);
+  border: 0px;
+}
+.images {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;  
+}
+
+.previous , .next{
+    width: 30px;
+    height: 2em;
+    margin-top: 50px;
+    
+}
+.previous:hover , .next:hover{
+  background-color: #1877F2;
+  height: 100%;
+  border-radius: 30%;
+}
+.images img {
+  width: 100%; 
+  border-radius: 5%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.techused {
+  margin-top: 30px;
+  text-align: center;
+  transform: translateY(80px);
+}
+
+.techused h3 {
+  font-size: 20px;
+  color: #1877F2;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Responsive grid */
+  gap: 10px;
+  list-style-type: none;  /* Remove default list bullets */
+  padding: 0;
+  
+}
+
+.tech-list li {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 15px;
+  transition: transform 0.2s;
+}
+
+.tech-list li:hover {
+    transform: scale(1.05);
+}
+
+
+
+/*app*/
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    padding-top: 80px; /* Adjust as needed for mobile */
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
