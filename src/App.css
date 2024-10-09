@@ -30,56 +30,54 @@
 .navbar-scrolled {
   background-color: rgba(0, 0, 0, 0.8); 
 }
-@media (max-width: 768px) {
-.navbar:after {
-  content: '\2193'; /* Down arrow as the scroll indicator */
-  position: absolute;
-  bottom: 5px;
-  left: 60%;
-  transform: translateX(-50%);
-  color: white;
-  font-size: 1.5rem;
-  display: block;
-  animation: bounce 1.5s infinite;
-}
 
-@keyframes bounce {
-  0% {
-    transform: translateX(-50%) translateY(0); /* Initial position */
-  }
-  50% {
-    transform: translateX(-50%) translateY(-10px); /* Move the arrow up */
-  }
-  100% {
-    transform: translateX(-50%) translateY(0); /* Return to original position */
-  }
-}
-}
-@media (max-width: 480px){
-  .navbar:after {
-    content: '\2193'; /* Down arrow as the scroll indicator */
-    position: absolute;
-    bottom: 5px;
-    left: 60%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 1.5rem;
+
+/* Scroll indicator visible only on mobile devices */
+@media (max-width: 991px) {
+  .scroll-indicator {
     display: block;
-    animation: bounce 1.5s infinite;
+    position: absolute;
+    bottom: 10px; /* Adjust based on navbar height */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #1877F2; /* Blue color for the indicator */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: bounce 1s infinite; /* Optional: animation for bounce effect */
+    opacity: 1;
   }
-  
+
+  .scroll-indicator.hidden {
+    opacity: 0; /* Hide the indicator when scrolled */
+    pointer-events: none;
+  }
+
+  /* Optional: Add animation to the scroll indicator for a bounce effect */
   @keyframes bounce {
-    0% {
-      transform: translateX(-50%) translateY(0); /* Initial position */
+    0%, 100% {
+      transform: translateX(-50%) translateY(0);
     }
     50% {
-      transform: translateX(-50%) translateY(-10px); /* Move the arrow up */
-    }
-    100% {
-      transform: translateX(-50%) translateY(0); /* Return to original position */
+      transform: translateX(-50%) translateY(-10px);
     }
   }
+
+  /* Add styles for when the navbar has been scrolled */
+  .navbar-scrollable .scroll-indicator {
+    display: block;
+  }
 }
+
+.navbar-collapse {
+  overflow-y: auto;
+  max-height: 300px; /* Adjust based on your needs */
+}
+
 
 
 /**/
