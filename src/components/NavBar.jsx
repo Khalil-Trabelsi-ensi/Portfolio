@@ -34,7 +34,8 @@ function NavBar() {
   return (
     <Navbar className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}  variant="dark" fixed="top" expand="lg" >
       <Container fluid>
-        <Navbar.Brand href="/" className='title'>Portfolio</Navbar.Brand>
+      
+        <Navbar.Brand href="#" className='title'>Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
         <Nav className="ms-auto my-2 my-lg-0 custom-nav-margin" style={{ maxHeight: '100px' }} navbarScroll>
