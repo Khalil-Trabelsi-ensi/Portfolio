@@ -30,7 +30,7 @@
 .navbar-scrolled {
   background-color: rgba(0, 0, 0, 0.8); 
 }
-
+@media (max-width: 768px) {
 .navbar:after {
   content: '\2193'; /* Down arrow as the scroll indicator */
   position: absolute;
@@ -54,7 +54,32 @@
     transform: translateX(-50%) translateY(0); /* Return to original position */
   }
 }
-
+}
+@media (max-width: 480px){
+  .navbar:after {
+    content: '\2193'; /* Down arrow as the scroll indicator */
+    position: absolute;
+    bottom: 5px;
+    left: 60%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.5rem;
+    display: block;
+    animation: bounce 1.5s infinite;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateX(-50%) translateY(0); /* Initial position */
+    }
+    50% {
+      transform: translateX(-50%) translateY(-10px); /* Move the arrow up */
+    }
+    100% {
+      transform: translateX(-50%) translateY(0); /* Return to original position */
+    }
+  }
+}
 
 
 /**/
