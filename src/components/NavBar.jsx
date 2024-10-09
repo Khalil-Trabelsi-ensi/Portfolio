@@ -10,6 +10,8 @@ import {useEffect, useState } from 'react';
 
 
 function NavBar() {
+
+
   const[scrolled,setScrolled]=useState(false);
   const navigate=useNavigate();
   useEffect(() => {
@@ -44,9 +46,7 @@ function NavBar() {
             <NavDropdown title="Link" id="navbarScrollingDropdown" >
               <NavDropdown.Item onClick={()=>navigate("/skills")}>Skills</NavDropdown.Item>
               <NavDropdown.Item onClick={()=>navigate("projects")}> Projects</NavDropdown.Item>
-           
             </NavDropdown>
-            
           </Nav>
           
         </Navbar.Collapse>
