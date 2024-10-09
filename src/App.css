@@ -77,7 +77,15 @@
   overflow-y: auto;
   max-height: 300px; /* Adjust based on your needs */
 }
+@media (min-width: 992px) {
+  .navbar-collapse {
+    overflow-y: visible;
+  }
 
+  .scroll-indicator {
+    display: none;
+  }
+}
 
 
 /**/
