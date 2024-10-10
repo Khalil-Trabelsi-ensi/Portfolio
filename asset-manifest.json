@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.e84d3221.css",
+    "main.js": "/Portfolio/static/js/main.e42ed533.js",
+    "static/js/453.68693753.chunk.js": "/Portfolio/static/js/453.68693753.chunk.js",
+    "static/media/Auto.png": "/Portfolio/static/media/Auto.be54b948642ca7d424eb.png",
+    "static/media/binancelink.png": "/Portfolio/static/media/binancelink.f7bcfe5256c025fd972b.png",
+    "static/media/packages.png": "/Portfolio/static/media/packages.4170dfe863e50f7961b8.png",
+    "static/media/HRA app.png": "/Portfolio/static/media/HRA app.cbccf6ca1b5eb52d9c10.png",
+    "static/media/payment.png": "/Portfolio/static/media/payment.3af00680ca1f146289c3.png",
+    "static/media/dbeaver.png": "/Portfolio/static/media/dbeaver.2b3e2518863564bd5ec3.png",
+    "static/media/EDSN.png": "/Portfolio/static/media/EDSN.c54990fe4b56737f8f10.png",
+    "static/media/profilepic.jpg": "/Portfolio/static/media/profilepic.3e4c2316fe97a55cd220.jpg",
+    "static/media/resume.pdf": "/Portfolio/static/media/resume.a03a73ec59d3a5547804.pdf",
+    "static/media/login.png": "/Portfolio/static/media/login.be7c8cee5744a6db8601.png",
+    "static/media/certif generator .png": "/Portfolio/static/media/certif generator .f1ccf78393e90478e1a0.png",
+    "static/media/communique-financier.png": "/Portfolio/static/media/communique-financier.dc7850081a7226f468c3.png",
+    "index.html": "/Portfolio/index.html",
+    "main.e84d3221.css.map": "/Portfolio/static/css/main.e84d3221.css.map",
+    "main.e42ed533.js.map": "/Portfolio/static/js/main.e42ed533.js.map",
+    "453.68693753.chunk.js.map": "/Portfolio/static/js/453.68693753.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e84d3221.css",
+    "static/js/main.e42ed533.js"
+  ]
+}
